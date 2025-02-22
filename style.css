@@ -1,0 +1,373 @@
+
+header{
+    display: none;
+    
+}
+
+.movil{
+    display: none;
+}
+
+.contenido{
+    display: none;
+}
+
+
+.carousel{
+    display: none;
+}
+
+
+
+.afiliate{
+    display: none;
+}
+
+
+@media  (max-width: 480px){
+    header{
+    display: block;
+    position: relative;
+    z-index: 1050; /* Un valor más alto que el z-index del navbar (que por defecto es 1030) */
+    background-color: #004e97; /* Ajusta el fondo para que el header sea visible */
+    padding-bottom: 4px; /* Evita que el navbar cubra el header */
+    }
+  
+    .movil{
+        display: block;
+    }
+
+/*BARRA MENU*/
+    .navbar {
+        height: 70px; /* Ajusta la altura de la barra de navegación */
+        background-color: #ffffff !important;
+    }
+    
+    .navbar-logo {
+        height: 40px; /* Hace que la imagen ocupe toda la altura del navbar */
+        max-height: 60px; /* Evita que la imagen sea más grande que la barra */
+        display: block;
+        margin: auto;
+       
+    
+    }
+
+/*BOTON*/
+    /* Cambiar el color del icono (el que aparece en el botón) */
+    .navbar-toggler-icon {
+    background-color:#004e97; /* Cambia este valor por el color del icono */
+    filter: invert(23%) sepia(78%) saturate(4629%) hue-rotate(206deg) brightness(100%) contrast(100%);
+    }
+
+    /* Cambiar el color cuando el botón está en foco (al hacer clic en él) */
+    .navbar-toggler:focus {
+    outline: none;
+   
+    box-shadow: 0 0 0 0.25rem #004e97; /* Ajusta el color de sombra de foco */
+    }
+
+
+    .navbar-toggler {
+    display: block;
+    }
+
+
+
+    .afi{
+        background-color: #004e97;
+        color: white;
+        height: 25px;
+       border: none;
+       font-size: 13px;
+       width: 70px;
+       font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border-radius: 50px;
+    }
+
+
+    
+    /* Carrusel /////////////////////////////////*/
+.carousel-container {
+    width: 100%; /* Puede ser el 100% de su contenedor padre */
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    overflow: hidden; /* Oculta las imágenes fuera de la vista */
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    display: flex; /* Flexbox para alinear las imágenes horizontalmente */
+    transition: transform 1s ease-in-out; /* Deslizar las imágenes con una transición suave */
+}
+
+/* Estilo para cada imagen del carrusel */
+.carousel-item {
+    min-width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+    position: relative; /* Necesario para posicionar el texto dentro de este contenedor */
+}
+
+.carousel-item img {
+    width: 100%; /* La imagen se adapta al ancho del contenedor */
+    height: 350px; /* Mantiene las proporciones de la imagen */
+    object-fit: cover; /* Mantiene la imagen completa dentro del contenedor sin recortarla */
+}
+
+/* Capa con el degradado */
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 78, 151, 0.7), rgba(255, 255, 255, 0.3)); /* Degradado azul */
+    z-index: 0; /* Asegura que la capa esté debajo del texto */
+}
+
+/* Contenedor de texto */
+.carousel-item .text-content {
+    position: absolute;
+    bottom: 0; /* Coloca el texto al pie de la imagen */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta el texto para estar completamente centrado */
+    color: white; /* Color del texto */
+    z-index: 1; /* Asegura que el texto esté por encima de la capa de gradiente */
+    text-align: center;
+    padding: 10px; /* Añade espacio alrededor del texto */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(58, 112, 163, 0.7)); /* Fondo oscuro semitransparente para mejorar la legibilidad */
+    width: 100%;
+}
+
+/* Estilos para el texto */
+.carousel-item .text-content h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel-item .text-content p {
+    font-size: 1em;
+    margin:0;
+}
+
+/*Menú desplegable    /////////////////////////*/
+.offcanvas-custom {
+    background-color:#004e97; /* Cambia este color al que desees */
+}
+
+.logoM{
+    height: 40px;
+    
+}
+
+
+.btn-success{
+    background-color: #0486ff;
+}
+
+.btn-success:hover{
+    background-color: #0971d3;
+}
+
+
+/*Llamado a la acción  //////////////////////////*/
+.sumate{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.text{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #004e97;
+    padding: 3px;
+
+
+  
+}
+
+.text2{
+    font-size: 14px;
+    text-align: center;
+}
+
+.llamado{
+    width: 150px;
+    height: 40px;
+    background-color:#004e97;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    margin-left: 35%;
+}
+
+.llamado:hover{
+    background-color:#0366c2;
+}
+
+
+.detal{
+    display: flex;
+    
+}
+
+.n{
+    font-size: 18px;
+    margin: 0 0 0 22px;
+    font-weight: bold;
+    
+    width: 26%;
+}
+
+.n1{
+ 
+ width: 64%;
+ 
+ padding: 5px 0 0 0;
+ 
+
+}
+
+.n2{
+    background-color: #004e97;
+    height: 8px;
+    
+}
+
+.n3{
+ 
+    width: 67%;
+    
+    padding: 5px 0 0 0;
+  
+
+   }
+   
+   .n4{
+       background-color: #004e97;
+       height: 8px;
+       
+   }
+
+
+   .n5{
+    font-size: 18px;
+    margin: 0 0 0 22px;
+    font-weight: bold;
+    
+    width: 23%;
+}
+
+
+
+
+
+
+.card{
+   margin-left: 5%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 0%;
+    
+}
+
+
+
+.btn-primary{
+    background-color: #004e97;
+}
+
+
+
+
+.contacto{
+    background-color: #004e97;
+    height: 140px;
+    display: flex;
+    
+}
+
+
+
+
+.redes{
+
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+padding: 0 0 35px 0;
+
+
+}
+
+.letras{
+
+width: 80%;
+padding: 20px 0 0 20px;
+color: white;
+
+
+}
+
+.t{
+    font-size: 18px;
+    text-align:left;
+    font-weight: bold;
+}
+
+.t2{
+    font-size: 14px;
+    text-align: left;
+}
+
+
+.r{
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+
+
+.pie{
+    display: flex;
+    
+}
+
+.mapa{
+ 
+
+padding: 20px 0 20px 20px;
+    
+
+}
+
+.mitad{
+    
+    width: 32%;
+    height: 100px;
+    
+}
+
+
+
+h6{
+    padding: 20px 0 0 15px;
+    font-size: 13px;
+    
+}
+
+}
+
+
+
+
+
+
+
+
+    
+
+
