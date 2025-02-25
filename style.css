@@ -102,7 +102,7 @@ header{
         height: 250px;
         max-width: 100%;
         overflow: hidden;
-        margin: 50px 0 0 0;
+        margin: 40px 0 0 0;
     }
     
     .carousel {
@@ -208,9 +208,71 @@ header{
 }
 
 
+/*caja el partido*/
+.partido{
+    background: linear-gradient(to right, #015eb4, rgba(0, 0, 0, 0.8));
+    height: 998px;
+}
+
+
+
+.ep{
+    
+    font-size: 18px;
+    margin:0 10px;
+    color: white;
+    font-weight: bold;
+
+   padding: 10px 0 0 0;
+}
+
+.secuencia{
+    display: flex;
+    width: 100%;
+   
+}
+
+.s1{
+    width: 160px;
+    height: 160px;
+   background-image: url(img/s1.png);
+    margin:  0 0 0 10px;
+}
+
+
+.s2{
+    background-color: white;
+    width:210px;
+    display: flex;
+    align-items: center;
+}
+
+.s3{
+    font-size: 14px;
+    color:black;
+    padding: 10px;
+   
+}
+
+.s4{
+    width: 160px;
+    height: 160px;
+   background-image: url(img/s2.png);
+    margin:  0 0 0 10px;
+}
+
+.s5{
+    width: 160px;
+    height: 160px;
+   background-image: url(img/s3.png);
+    margin:  0 0 0 10px;
+}
+
+
 /*Llamado a la acción  //////////////////////////*/
 .sumate{
-    background-color: white;
+  /*  background: linear-gradient(to right, #fce941, rgba(255, 148, 25, 0.8));*/
+  background-image: url(img/mh.png);
     padding: 25px 0;
 }
 
@@ -250,28 +312,63 @@ header{
 
     background-color: #004e97;
     font-size: 18px;
-    margin: 0 20px;
+    margin: 0 10px;
     color: white;
     font-weight: bold;
-    padding: 5px
+    padding: 2px 5px
 }
 
 
 
 .card{
-   margin: 0 5%;
-    background-color: rgb(255, 255, 255);
+   margin: 0 10px;
     border-radius: 0%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05), /* Sombra abajo */
+    0px -4px 10px rgba(0, 0, 0, 0.05), /* Sombra arriba */
+    4px 0px 10px rgba(0, 0, 0, 0.05), /* Sombra derecha */
+    -4px 0px 10px rgba(0, 0, 0, 0.05); /* Sombra izquierda */
+   
+}
+
+.card-img-top{
+    height: 250px;
+
+}
+
+
+.card-body{
+    height:100px;
+    
+}
+
+
+.card-title{
+    height:40px;
+    font-size: 15px;
     
 }
 
 
 
-.btn-primary{
-    background-color: #004e97;
+.verm{ 
+    height: 20px;
 }
 
+.v{
+    background-color: #004e97;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    width: 80px;
+}
 
+.v1{
+    background-color: #004e97;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+}
 
 .hero{
     height: 200px;
@@ -337,7 +434,7 @@ color: white;
 
 
 .her{
-    background-color:#cce6ff;
+    background-color:#e6e6e6;
     height: 50px;
     margin: 0 !important;
     display: flex;
@@ -347,14 +444,15 @@ color: white;
 
 
 .n5{
-    font-size: 18px;
-
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 5px;
-    margin: 0 20px;
-    background-color:#014280;
+  
     width: 100%;
+
+    background-color: #004e97;
+    font-size: 18px;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+    padding: 2px 5px
 
 }
 
@@ -362,7 +460,7 @@ color: white;
 
 .pie{
     display: flex;
-    background-color:#cce6ff;
+    background-color:#e6e6e6;
 }
 
 
