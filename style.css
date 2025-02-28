@@ -311,13 +311,14 @@ header{
 
 .novedades{
     display: flex;
-    background-color: #e6e6e6;
+
+    margin:0 10px 0 0 ;
 }
 
 
 .n{
 
-    background-color: #004e97;
+    background-color:#014280;
     font-size: 18px;
     margin: 0 0 0 10px ;
     color: white;
@@ -331,10 +332,10 @@ header{
 
 
 .no{
-    background-color:  #004e97;
+    background-color:#014280;
     height:5px;
     width: 100%;
-   
+   margin: 0;
  
     
 }
@@ -342,7 +343,9 @@ header{
 .na{
     display: flex;
     align-items: end;
-    width: 62%;
+    width: 66%;
+  
+    margin: 0;
    
 }
 
