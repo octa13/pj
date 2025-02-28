@@ -308,14 +308,42 @@ header{
     background-color:#0366c2;
 }
 
+
+.novedades{
+    display: flex;
+    background-color: #e6e6e6;
+}
+
+
 .n{
 
     background-color: #004e97;
     font-size: 18px;
-    margin: 0 10px;
+    margin: 0 0 0 10px ;
     color: white;
     font-weight: bold;
-    padding: 2px 5px
+    padding: 2px 5px;
+    width: 32%;
+    height: 28px;
+    
+
+}
+
+
+.no{
+    background-color:  #004e97;
+    height:5px;
+    width: 100%;
+   
+ 
+    
+}
+
+.na{
+    display: flex;
+    align-items: end;
+    width: 62%;
+   
 }
 
 
