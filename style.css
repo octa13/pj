@@ -68,14 +68,6 @@ footer{
     display: none; /* Ocultar por defecto */
 }
 
-
-.enlbotonHamburg{
-    display: none;
-}
-
-
-
-
 @media  (max-width: 767px){
    
     .versionCelulares {
@@ -152,28 +144,10 @@ footer{
     }
 
 
-
-
-    .enlbotonHamburg{   /* Botón del menu hamburguesa*/
-        display: block;
-      
-    }
-
-    .botonHamburg{
-        background-color:#dbd816;
-        color:#004e97;
-        border: none;
-        border-radius: 10px;
-        width: 70px;
-        margin: 15px 0 0 0;
-        font-weight: bold;
-    }
-
-
     .carruselMovil{
         width: 100%;
         height: 200px;
-  
+        background-color: aqua;
         margin:69px 0 0 0;
     }
 
@@ -297,7 +271,6 @@ footer{
 
 .nav-link{
     color: white;
-    font-weight: bold;
 }
 
 
