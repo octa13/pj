@@ -23,15 +23,15 @@
 
 
 <header class="encabezado">
-    <div class="pj"> <img src="img/dn.png" alt="" class="logojp"></div>
+    <div class="pj"><a href="index.html" class="enlaceInicio"> <img src="img/dn.png" alt="" class="logojp"></a></div>
 
 
     <div class="navegar">
-        <a href="" class="letranavegar">INICIO</a>
-        <a href="" class="letranavegar">NOVEDADES</a>
-        <a href=""class="letranavegar">INSTITUCIONAL</a>
-        <a href=""class="letranavegar">CONTACTO</a>
-        <a href="https://wa.me/1234567890"><button class="afiliatejp">AFILIATE</button></a> 
+        <a href="index.html" class="letranavegar">INICIO</a>
+        <a href="#novedadesInicio" class="letranavegar">NOVEDADES</a>
+        <a href="#institucionalInicio"class="letranavegar">INSTITUCIONAL</a>
+        <a href="#contactoInicio"class="letranavegar">CONTACTO</a>
+        <a href="https://wa.me/+5493855806460" target="_blank"><button class="afiliatejp">AFILIATE</button></a> 
 
     </div>
 
@@ -59,7 +59,7 @@
 
 
 
-  <h3 class="novedadesEscritorio">NOVEDADES</h3>  
+  <h3 class="novedadesEscritorio" id="novedadesInicio">NOVEDADES</h3>  
 
     <div class="seccionNovedades">
         <div class="imagenGrande">
@@ -104,10 +104,10 @@
 <div class="banerEscritorio">
 <h2 class="afiliateEscritorio">AFILIATE AL PARTIDO JUSTICIALISTA</h2>
 <P class="textoAfiliate">Contáctate con nosotros y forma parte del movimiento popular más grande del país.</P>
-<a href="https://wa.me/1234567890" ><button class="botonAfiliate">SUMATE</button></a>
+<a href="https://wa.me/+5493855806460" target="_blank"><button class="botonAfiliate">SUMATE</button></a>
 </div>
 
-<br><br><br>
+<br><br><br id="institucionalInicio">
 
 
 
@@ -163,9 +163,9 @@
 
 <img src="img/Banpj.png" alt="" class="banerdelPjNuevo">
 
-<br><br>
+<br><br id="contactoInicio">
 
-<h3 class="novedadesEscritorio">CONTACTO</h3>  
+<h3 class="novedadesEscritorio" >CONTACTO</h3>  
 
 
 <div class="contactoEscritorio">
@@ -176,17 +176,20 @@
 <h5 class="textoSeguinos">Mira todo nuestro contenido a través <br> de Facebook, Instagram  y Tiktok.</h5>
 
     <div class="divdeTexto">
-      <a href="https://www.facebook.com/profile.php?id=100064168411969" >
+      <a href="https://www.facebook.com/profile.php?id=100064168411969"  target="_blank">
         <img src="img/ins.png" alt="" class="iconoRedes">  
       </a> 
-      <h5 class="facebookText">Juventud Peronista Santiago del Estero</h5>  
+      <a href="https://www.facebook.com/profile.php?id=100064168411969"  target="_blank"><h5 class="facebookText">Juventud Peronista Santiago del Estero</h5>  </a>
     </div> <br>
 
-    <div class="divdeTexto"><a href="https://www.instagram.com/jotapesde/" ><img src="img/fac.png" alt="" class="iconoRedes"></a> 
-        <h5 class="facebookText">jotapesde</h5></div><br>
+    <div class="divdeTexto"><a href="https://www.instagram.com/jotapesde/" target="_blank" ><img src="img/fac.png" alt="" class="iconoRedes"></a> 
+      <a href="https://www.instagram.com/jotapesde/" target="_blank" > <h5 class="facebookText">jotapesde</h5></a></div>
+      <br>
 
-   <div class="divdeTexto"><a href="https://www.tiktok.com/@jotape_sde" ><img src="img/tik.png" alt="" class="iconoRedes"></a> 
-        <h5 class="facebookText">jotape_sde</h5></div><br>
+
+   <div class="divdeTexto"><a href="https://www.tiktok.com/@jotape_sde" target="_blank" ><img src="img/tik.png" alt="" class="iconoRedes"></a> 
+    <a href="https://www.tiktok.com/@jotape_sde" target="_blank" ><h5 class="facebookText">jotape_sde</h5></a></div>
+      <br>
      
 
 </div>
@@ -210,11 +213,14 @@
 <br><br>
 <div class="piedePagina"> 
     <h6 class="copydePie"> © 2025 Partido Justicialista Santiago del Estero.
-        Todos los derechos reservados.</h6>
+        Todos los derechos reservados. <br> www.jpsgo.com.ar</h6>
 
 </div>
 <div class="bordePie"></div>
 
+<button id="btnSubir">
+  <img src="img/flecha.png" alt="" class="flechaNav">
+</button>
 
 </div>  
 
@@ -498,6 +504,33 @@
 </script>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<!-- Mostrar el botón cuando el usuario hace scroll hacia abajo -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const btnSubir = document.getElementById("btnSubir");
+  
+      // Mostrar el botón cuando el usuario hace scroll hacia abajo
+      window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+              btnSubir.style.display = "block";
+          } else {
+              btnSubir.style.display = "none";
+          }
+      });
+  
+      // Desplazar al header al hacer clic en el botón
+      btnSubir.addEventListener("click", function () {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      });
+  });
+  </script>
+  
+
 
 <script src="app.js"></script>
  

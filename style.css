@@ -110,7 +110,7 @@ footer{
         height: 50px; /* Hace que la imagen ocupe toda la altura del navbar */
         /* Evita que la imagen sea más grande que la barra */
         display: block;
-        margin: 0 20px 0 50px;
+        margin: 0 30px 0 40px;
    
        width: 130px;
         
@@ -685,7 +685,7 @@ footer{
 
 
 
-/* version escritorio*/
+/* version escritorio////////////////////////////////////////////////////////////////////////////*/
 
 
 
@@ -797,11 +797,17 @@ will-change: width;
      border: none;
      background-color: #004e97;
      width: 90px;
+
+
+     transition: transform 0.1s ease-in-out; 
+
 }
 
 
 .afiliatejp:hover{
     background-color:#0486ff; 
+
+    transform: scale(1.09); /* Aumenta el tamaño al 110% */
 }
 
 .buscador3{
@@ -850,10 +856,16 @@ will-change: width;
     font-weight: bolder;
     margin: 10px 0 0 15px;
 
+
+    transition: transform 0.1s ease-in-out; 
+
+
 }
 
 .verEscritorio:hover{
     background-color: #0366c2;
+
+    transform: scale(1.09); /* Aumenta el tamaño*/
 
 }
 
@@ -1007,10 +1019,14 @@ will-change: width;
      margin: 1% 0 0 42%;
      font-size: 24px;
 
+     transition: transform 0.1s ease-in-out; 
+
 }
 
 .botonAfiliate:hover{
     background-color: #0486ff;
+
+    transform: scale(1.09); /* Aumenta el tamaño*/
 }
 
 
@@ -1147,8 +1163,19 @@ will-change: width;
 
 .iconoRedes{
     margin: 0 10px 0 0;
-  
+    
+    transition: transform 0.1s ease-in-out; 
+
 }
+
+
+.iconoRedes:hover{
+
+    transform: scale(1.09); /* Aumenta el tamaño*/
+}
+
+
+
 
 .divdeTexto{
     display: flex;
@@ -1196,5 +1223,41 @@ will-change: width;
 
 }
 
+
+
+#btnSubir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+   
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Se oculta inicialmente */
+    transition: 0.3s;
+}
+
+#btnSubir:hover {
+    background-color: #0056b3;
+}
+
+.flechaNav {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    
+    transition: transform 0.1s ease-in-out; 
+}
+
+
+.flechaNav:hover{
+    transform: scale(1.09); /* Aumenta el tamaño*/
+}
 
 }
