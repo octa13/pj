@@ -491,18 +491,6 @@ footer{
 
 
 
-
-.contacto{
-    background-color: #013e77;
-    height: 140px;
-    display: flex;
-    
-    
-}
-
-
-
-
 .redes{
 
 width: 50%;
@@ -511,29 +499,9 @@ align-items: center;
 justify-content: center;
 padding: 0 20px 35px 0;
 
-
-
-
 }
 
-.letras{
 
-width: 80%;
-padding: 20px 0 20px 20px;
-color: white;
-
-}
-
-.t{
-    font-size: 18px;
-    text-align:left;
-    font-weight: bold;
-}
-
-.t2{
-    font-size: 14px;
-    text-align: left;
-}
 
 
 .r{
@@ -557,13 +525,12 @@ color: white;
 .n5{
   
     width: 100%;
-
     background-color: #004e97;
     font-size: 18px;
     margin: 0 10px;
     color: white;
     font-weight: bold;
-    padding: 2px 5px
+    padding: 2px 5px;
 
 }
 
@@ -622,6 +589,33 @@ h6{
     width: 100%;
    
 }
+
+
+.contacto{
+    background-color: #013e77;
+    height: 140px;
+    display: flex;
+  
+}
+
+.letras{
+
+    width: 80%;
+    padding: 20px 0 20px 20px;
+    color: white;
+    
+    }
+    
+    .t{
+        font-size: 18px;
+        text-align:left;
+        font-weight: bold;
+    }
+    
+    .t2{
+        font-size: 14px;
+        text-align: left;
+    }
 
 
 
@@ -1259,5 +1253,86 @@ will-change: width;
 .flechaNav:hover{
     transform: scale(1.09); /* Aumenta el tamaño*/
 }
+
+
+/* submenuInstitucional*/
+/* Contenedor del submenú */
+.submenu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Lista oculta del submenú */
+.submenu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /*background-color:#007bff; /* Fondo del submenú */
+   /* border: 1px solid #ddd;*/
+    min-width: 100px;
+    list-style: none;
+    padding: 0;
+    z-index: 1000;
+}
+
+/* Estilos de los ítems del submenú */
+.submenu-list li {
+    padding: 0px;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.submenu-list li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 5px 20px;
+}
+
+
+
+
+
+
+.submenu-list li a:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color:#0486ff;
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    transition: all .5s;
+    will-change: width;
+    
+    }
+    .submenu-list li a:hover:after {
+       width: 100%;
+        right: 0;
+    
+    }
+
+
+
+
+
+
+
+
+
+/* Cambio de color al pasar el mouse */
+.submenu-list li:hover {
+    background-color:#ffffff;
+
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.submenu:hover .submenu-list {
+    display: block;
+}
+
+
 
 }

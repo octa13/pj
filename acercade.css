@@ -1,0 +1,1100 @@
+
+
+body{
+    background-color: rgb(238, 238, 238); 
+  
+}
+
+.linea{
+    display: none;
+}
+
+.encabezado{
+    display: none;
+}
+
+.movil{
+    display: none;
+}
+
+.todo{
+    display: none;
+}
+
+
+
+
+
+
+@media  (min-width: 370px){
+
+.sumate{
+    display: none;
+}
+
+.n5{
+    display: none;
+}
+
+.autoridadesMovil{
+    display: none;
+}
+
+.hero{
+    display: none;
+}
+
+.pie{
+    display: none;
+}
+
+.contacto{
+    display: none;
+}
+.resumen{
+    display: none;
+}
+
+.footer{
+    display: none;
+}
+
+.her{
+    display: none;
+}
+.todo{
+    display: block;
+}    
+.linea{  /*Línea azul del encabezado*/
+
+    background-color:  #004e97;
+    height: 5px;
+    display: block;
+}
+
+
+.encabezado{ /*div del menú de navegación*/
+    display: flex;
+    height: 100px;
+    background-color: white;
+}
+
+.pj {  /*Logo del pj*/
+    background-color: white;
+    width: 20%;
+    padding: 0 40px;   
+    display: flex;
+    align-items: center;
+}
+
+/*.buscador{          Boton de buscar por ahora no
+width: 25%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color:white;
+padding: 0 40px 10px 30px;
+}
+
+
+.btn-success{
+    background-color: #004e97;            Boton de buscar por ahora no
+    font-weight: bold;
+    
+}
+
+
+.btn-success:hover{
+    background-color: #0486ff;             Boton de buscar por ahora no
+}
+*/
+
+
+
+
+.logojp{  /*edición de imagen del logo jp*/
+height: 80px;
+width: 170px;
+
+}
+
+
+.navegar { /*menú de navegación*/
+    background-color:white;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0 0 0 0px;
+    padding: 0 70px 0 0;
+}
+
+
+
+.letranavegar{ /*Items del menú d enavegación*/
+    color:black; 
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+.letranavegar:after{ /*Items del menú d enavegación*/
+content: "";
+width: 0;
+height: 4px;
+background-color:#0486ff;
+position: absolute;
+bottom: 0;
+right: 30%;
+transition: all .5s;
+will-change: width;
+
+}
+
+.letranavegar:hover:after { /*Items del menú d enavegación*/
+   width: 100%;
+    right: 0;
+
+}
+
+
+
+.afiliatejp{ /*botón de afiliarse en el menú de navegación*/
+    margin: 0 5px 0 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+     padding: 7px;
+     border: none;
+     background-color: #004e97;
+     width: 90px;
+
+
+     transition: transform 0.1s ease-in-out; 
+
+}
+
+
+.afiliatejp:hover{ /*botón de afiliarse en el menú de navegación*/
+    background-color:#0486ff; 
+
+    transform: scale(1.09); /* Aumenta el tamaño al 110% */
+}
+
+.buscador3{ /*Frase del menu denavegación*/
+    display: flex;
+    align-items: center;
+   font-weight: bolder;
+    padding: 5px 0 0 0;
+    margin-left: 120px;
+}
+
+
+
+
+/* submenuInstitucional*/
+/* Contenedor del submenú */
+.submenu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Lista oculta del submenú */
+.submenu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /*background-color:#007bff; /* Fondo del submenú */
+   /* border: 1px solid #ddd;*/
+    min-width: 100px;
+    list-style: none;
+    padding: 0;
+    z-index: 1000;
+}
+
+/* Estilos de los ítems del submenú */
+.submenu-list li {
+    padding: 0px;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.submenu-list li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 5px 20px;
+}
+
+
+.submenu-list li a:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color:#0486ff;
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    transition: all .5s;
+    will-change: width;
+    
+    }
+    .submenu-list li a:hover:after {
+       width: 100%;
+        right: 0;
+    
+    }
+
+
+
+/* Cambio de color al pasar el mouse */
+.submenu-list li:hover {
+    background-color:#ffffff;
+
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.submenu:hover .submenu-list {
+    display: block;
+}
+
+.carruselEscritorio{ /*Banner de institucional en header*/
+    background-image: url(img/ACERCA\ DE\ NOSOTROS.png);
+    height: 350px;
+    width: 1350px;
+    display: block;
+}
+
+
+.textoInstitucional{
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    height:280px;
+}
+
+.textoInstitucional1{
+    background-color: rgb(238, 238, 238);
+    width: 50%;
+    height: 250px;
+  
+
+}
+
+
+
+.descripcionInstitucional{
+   
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    padding: 0 40px 0 0;
+    font-size: 18px;
+    
+}
+
+.imagenInstitucional{
+    background-color: rgb(238, 238, 238);
+    width: 50%;
+    height: 250px;
+   
+    display: flex;
+    justify-content: right;
+}
+
+.imagenInst{
+    height: 250px; 
+    width: 625px;
+    background-image: url(img/fotoInst.png);
+    margin: 0 20px 0 0;
+   
+}
+
+.acercaDenos{
+font-size: 20px;
+    font-weight: bolder;
+    background-color: #013e77;
+    margin: 40px  30px 20px 30px;
+    padding: 5px;
+    color: white;
+
+}
+
+
+
+.banerEscritorio{
+    background-image: url(img/bhEscritorio.png);
+    height: 300px;
+    width: 100%;
+    
+}
+
+.afiliateEscritorio{
+    text-align: center;
+    font-weight: bolder;
+   padding: 80px 0 0 0;
+   color: #004e97;
+   font-size: 40px;
+}
+
+.textoAfiliate{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.botonAfiliate{
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+     padding: 5px 7px;
+     border: none;
+     background-color: #004e97;
+     width: 200px;
+     margin: 1% 0 0 42%;
+     font-size: 24px;
+
+     transition: transform 0.1s ease-in-out; 
+
+}
+
+.botonAfiliate:hover{
+    background-color: #0486ff;
+
+    transform: scale(1.09); /* Aumenta el tamaño*/
+}
+
+hr{
+   width: 94.5%;
+ margin: 0 30px 10px 30px;
+}
+
+
+
+
+.acercaDenos2{
+font-size: 20px;
+    font-weight: bolder;
+    
+    margin: 40px  30px 0 30px;
+    padding: 5px;
+    color:#013e77;
+
+}
+
+.fondoblanco{
+    background-color: rgb(238, 238, 238);
+    padding: 30px 0 0 0;
+}
+
+
+
+.bloqueautoridades{
+    height: 400px;
+    width: 95.5%;
+    background-color: white;
+    margin: 0 30px 0 30px;
+   
+}
+
+
+.tres{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.tarjeta1{
+    height:300px;
+    width: 300px;
+    margin: 28px 60px 0 0;
+    
+}
+
+.card-text{
+    font-weight: bolder;
+    color:#424242;
+}
+
+
+
+.card-img-top{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08), /* Sombra abajo */
+    0px -4px 10px rgba(0, 0, 0, 0.08), /* Sombra arriba */
+    4px 0px 10px rgba(0, 0, 0, 0.08), /* Sombra derecha */
+    -4px 0px 10px rgba(0, 0, 0, 0.08); /* Sombra izquierda */; 
+}
+
+.tarjeta2{
+    height:300px;
+    width: 300px;
+    margin: 28px 60px 0 0;
+}
+
+.tarjeta3{
+    height:300px;
+    width: 300px;
+    margin: 28px 0 0 0;
+
+ 
+}
+
+
+
+.contactoEscritorio{
+    display: flex;
+    
+}
+
+.infoContacto{
+    background-color: #013e77;
+    height: 400px;
+    width: 630px;
+    margin: 0 0 0 30px;
+}
+
+
+
+.mapaContacto{
+    background-color:#e6e6e6;
+    height: 400px;
+    width: 630px;
+    margin: 0 0 0 30px;
+}
+
+
+.seguinosEnredes{
+    color: white;
+    font-weight: bolder;
+    margin: 40px 0 0 50px;
+}
+
+.textoSeguinos{
+    color: white;
+    margin: 20px 0 20px 50px;
+}
+
+
+.iconoRedes{
+    margin: 0 10px 0 0;
+    
+    transition: transform 0.1s ease-in-out; 
+
+}
+
+
+.iconoRedes:hover{
+
+    transform: scale(1.09); /* Aumenta el tamaño*/
+}
+
+
+
+
+.divdeTexto{
+    display: flex;
+    background-color: #0486ff;
+    align-items: center;
+    width: 75%;
+    margin-left: 50px;
+}
+
+.facebookText{
+    color: white;
+    
+}
+
+
+.direcciónPj{
+    background-color:#013e77;
+}
+
+.facebookText1{
+    color: black;
+    margin-left: 40px;
+    background-color: white;
+    padding-left: 20px;
+}
+
+
+
+.piedePagina{
+    background-color: white;
+    height: 100px;
+  
+}
+
+.copydePie{
+    text-align: center;
+    padding: 40px 0 0 0;
+   
+}
+
+
+.bordePie{
+    background-color: #013e77;
+    height: 8px;
+
+}
+
+
+
+#btnSubir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+   
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Se oculta inicialmente */
+    transition: 0.3s;
+}
+
+#btnSubir:hover {
+    background-color: #0056b3;
+}
+
+.flechaNav {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    
+    transition: transform 0.1s ease-in-out; 
+}
+
+
+.flechaNav:hover{
+    transform: scale(1.09); /* Aumenta el tamaño*/
+}
+
+
+
+.n5{
+    display: none;
+}
+
+.bloqueAcerca{
+    display: none;
+}
+
+.brN{
+    display: none;
+}
+
+
+
+}
+
+/* VERSIÓN MOVIL /////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media  (max-width: 767px){
+
+   
+
+    .todo{display: none;
+    }
+    
+    header{
+        display: block;
+        position: relative;
+        z-index: 1050; /* Un valor más alto que el z-index del navbar (que por defecto es 1030) */
+        background-color: #004e97; /* Ajusta el fondo para que el header sea visible */
+        padding-bottom: 4px; /* Evita que el navbar cubra el header */
+        }
+      
+        .movil{
+            display: block;
+        }
+    
+    /*BARRA MENU*/
+        .navbar {
+            height: 70px; /* Ajusta la altura de la barra de navegación */
+            background-color: #ffffff !important;
+        }
+        
+        .navbar-logo {
+            height: 50px; /* Hace que la imagen ocupe toda la altura del navbar */
+            /* Evita que la imagen sea más grande que la barra */
+            display: block;
+            margin: 0 30px 0 40px;
+       
+           width: 130px;
+            
+        }
+    
+    
+        .enlaceAfiliarse{
+            color: white;
+            text-decoration: none;
+        }
+    
+        
+    /*BOTON*/
+        /* Cambiar el color del icono (el que aparece en el botón) */
+        .navbar-toggler-icon {
+        background-color:#004e97; /* Cambia este valor por el color del icono */
+        filter: invert(23%) sepia(78%) saturate(4629%) hue-rotate(206deg) brightness(100%) contrast(100%);
+        }
+    
+        /* Cambiar el color cuando el botón está en foco (al hacer clic en él) */
+        .navbar-toggler:focus {
+        outline: none;
+       
+        
+        }
+    
+    
+        .navbar-toggler {
+        display: block;
+        }
+    
+    
+    
+        .afi{
+            background-color: #004e97;
+            color: white;
+            height: 35px;
+           border: none;
+           font-size: 13px;
+           width: 80px;
+           font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 10px;
+    
+        }
+        
+
+
+/*Menú desplegable    /////////////////////////*/
+.offcanvas-custom {
+    background-color:#004e97; /* Cambia este color al que desees */
+}
+
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+}
+
+.TextoBotonHamburg{
+text-decoration: none;
+}
+
+
+
+.botondeHmaburguesAfi{
+    background-color:rgb(226, 226, 73);
+    color: #014280;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    width: 85px;
+    margin: 13px 0 0 0;
+
+}
+
+/* Tamaño de los logos de redes en menu desplegable*/
+.r{
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+
+.logoM{
+    height: 40px;
+    
+}
+
+
+.btn-success{
+    background-color: #0486ff;
+}
+
+.btn-success:hover{
+    background-color: #0971d3;
+}
+
+/*Imagen de Portada */
+
+        .carruselMovil{
+            width: 100%;
+            height: 200px;
+            
+            margin:69px 0 0 0;
+        }
+    
+    
+        .carruselMovil{
+            background-image: url(img/portadaAcerca.png);
+        }
+
+
+        /*texto de bloque*/
+        
+        .n{
+
+            background-color: #004e97;
+            font-size: 18px;
+            margin: 0 10px;
+            color: white;
+            font-weight: bold;
+            padding: 2px 5px;
+            display: block;
+        }
+
+/* título acerca de (puede generar ruptura)*/
+        .n5{
+  
+            width: 95%;
+        
+            background-color: #004e97;
+            font-size: 18px;
+            margin: 0 10px;
+            color: white;
+            font-weight: bold;
+            padding: 2px 5px;
+            display: block;
+        
+        }
+
+
+        .bloqueAcerca{
+             display: flex;   
+             margin: 10px 0 0 0;
+          
+             height: 200px;
+        }
+
+
+        .imagenAcerca{
+            background-image: url(img/pjac.png);
+            width: 40%;
+            display: block;
+           margin:  0 0 10px 10px;
+            
+        }
+
+        .textoDescripción{
+          
+            width: 60%;
+            display: block;
+            padding:0 10px 10px 10px;
+            font-size: 13px;
+           
+        }
+
+        .division{
+            width: 94%;
+            margin: 10px;
+        }
+      
+
+        .brN{
+            display: block;
+        }
+
+
+
+        /*Llamado a la acción  //////////////////////////*/
+.sumate{
+    /*  background: linear-gradient(to right, #fce941, rgba(255, 148, 25, 0.8));*/
+    background-image: url(img/mh.png);
+      padding: 25px 0;
+      display: block;
+  }
+  
+  
+  .text{
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold;
+      color: #004e97;
+      padding: 3px;
+  
+  
+    
+  }
+  
+  .text2{
+      font-size: 14px;
+      text-align: center;
+      color: black;
+  }
+  
+  .llamado{
+      width: 150px;
+      height: 40px;
+      background-color:#004e97;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      margin-left: 30%;
+  }
+  
+  .llamado:hover{
+      background-color:#0366c2;
+  }
+  
+/* Bloque autoridades */
+    .autoridadesMovil{
+    background-color: rgb(255, 255, 255);
+    height: 280px;
+    display: flex;
+    
+    }
+
+   
+/*Carrusel de autoridades*/
+    
+.carousel-container {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+.carousel {
+    display: flex;
+    width: 200%; /* Doble del tamaño del contenedor */
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-slide {
+    width: 50%; /* La mitad del contenedor para mostrar dos imágenes */
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    width: 180px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.prev { left: 0; }
+.next { right: 0; }
+
+/* Checkbox para la navegación */
+#slide1:checked ~ .carousel { transform: translateX(0); }
+#slide2:checked ~ .carousel { transform: translateX(-50%); }
+
+
+
+
+/*Baner de peron*/
+.hero{
+    height: 200px;
+    background-image: url(img/MEJOR\ QUE\ DECIR\ ES\ HACER.png);
+    display: block;
+}
+
+/*Bloque contacto*/
+
+.her{
+    background-color:#e6e6e6;
+    height: 50px;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+
+/* estilo de contacto*/
+.n5{
+  
+    width: 100%;
+
+    background-color: #004e97;
+    font-size: 18px;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+    padding: 2px 5px;
+
+}
+
+
+/*bloque de contacto (mapa e info)*/
+
+.pie{
+    display: flex;
+    background-color:#e6e6e6;
+}
+
+/*mapa google*/
+.mapa{
+padding: 20px 0 20px 20px;
+}
+
+
+/*bloque info*/
+.mitad{
+    
+    width: 45%;
+    height: 170px;
+   
+    margin: 20px 0 0 0;
+}
+
+/*bloque de texto*/
+.detay{
+    background-color: #014280;
+    margin-left: 10px;
+    width: 84.5%;
+}
+
+/*bloque de texto*/
+.detay1{
+    background-color: #014280;
+    margin-left: 10px;
+    width: 84.5%;
+}
+
+/*bloque de texto*/
+.detay2{
+    background-color: #014280;
+    margin-left: 10px;
+    width: 84.5%;
+
+}
+
+/*estilo de texto*/
+h6{
+    padding: 8px 0 8px 8px;
+    font-size: 13px;
+    background-color: rgb(238, 238, 238);
+    margin-left: 10px ;
+    width: 100%;
+   
+}
+
+
+    .contacto{
+    background-color: #013e77;
+    height: 140px;
+    display: flex;  
+    }
+
+    .letras{
+
+    width: 80%;
+    padding: 20px 0 20px 20px;
+    color: white;
+    
+    }
+    
+    .t{
+        font-size: 18px;
+        text-align:left;
+        font-weight: bold;
+    }
+    
+    .t2{
+        font-size: 14px;
+        text-align: left;
+    }
+
+/*bloque redes*/
+    .redes{
+     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 35px 0;
+      
+    }
+        
+         
+    .r{
+     padding: 5px;
+      width: 45px;
+     height: 45px;
+     }
+
+
+     footer{
+
+        height: 80px;
+        display: block;
+        
+        }
+
+
+        .resumen{
+            text-align: center;
+            font-size: 12px;
+            padding: 20px ;
+            background-color: rgb(255, 255, 255);
+            height: 80px;
+            border-bottom:5px solid #013e77;
+            display: block;
+        }
+            
+     
+    
+    
+    }
+    
+    
+    
+    
+    /* BOTON DE WHASTAP*/
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        z-index: 100;
+        display: none; /* Oculto por defecto */
+    }
+    
+    .whatsapp-float img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .whatsapp-float img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    
+
+
+
+    
+
+
+
+
+
+
+   
