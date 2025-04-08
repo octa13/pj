@@ -6,9 +6,12 @@
 
 body{
     background-color: rgb(238, 238, 238);
-   
+    
 }
 
+.enlaceNegro{
+    color: black;
+}
 
 
 header{
@@ -80,6 +83,10 @@ footer{
 
 
 @media  (max-width: 767px){
+
+    .enlaceincioTallercel{
+        color: #000000;
+    }
    
     .versionCelulares {
         display: block; /* Mostrar solo en pantallas pequeñas */
@@ -342,7 +349,8 @@ footer{
 .s1{
     width: 160px;
     height: 160px;
-   background-image: url(img/s1.png);
+   background-image: url(img/5.jpg);
+   background-size:190%;
     margin:  0 0 0 10px;
 }
 
@@ -364,15 +372,17 @@ footer{
 .s4{
     width: 160px;
     height: 160px;
-   background-image: url(img/s2.png);
+   background-image: url(img/ep.png);
+   background-size: cover;
     margin:  0 0 0 10px;
 }
 
 .s5{
     width: 160px;
     height: 160px;
-   background-image: url(img/s3.png);
+   background-image: url(img/ep2.png);
     margin:  0 0 0 10px;
+    background-size: cover;
 }
 
 
@@ -439,10 +449,13 @@ footer{
     -4px 0px 10px rgba(0, 0, 0, 0.05); /* Sombra izquierda */
    display: block;
    height: 320px;
+   border: none;
 }
 
 .card-img-top{
     height: 250px;
+    object-fit: cover;
+    
 
 }
 
@@ -940,6 +953,8 @@ will-change: width;
 
 .card-img{
     height: 450px;
+    object-fit:cover;
+    
 }
 
 .cards-text{
@@ -958,6 +973,7 @@ will-change: width;
     -4px 0px 10px rgba(0, 0, 0, 0.08); /* Sombra izquierda */;
 
     transition: transform 0.3s ease-in-out;
+    
 
 }
 
@@ -966,6 +982,11 @@ will-change: width;
     transform: scale(1.02); /* Aumenta el tamaño al 110% */ 
 }
 
+.card-img-bloque3{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
 
 
 .card-body2{
@@ -1053,6 +1074,11 @@ will-change: width;
     margin:0 5px 0 30px;
 }
 
+.cardN .card-img-top{
+    height: 400px;
+    object-fit: cover;
+}
+
 
 .card-text3{
     font-weight: bolder;
@@ -1080,7 +1106,8 @@ will-change: width;
 }
 
 .cardInst{
-    background-image: url(img/inst.png);
+    background-image: url(img/5.jpg);
+    background-size:cover;
     height: 163.8px;
     margin:  0;
     width: 325px;
@@ -1105,7 +1132,7 @@ will-change: width;
 }
 
 .cardInst3{
-    background-image: url(img/ep3.png);
+    background-image: url(img/4.jpg);
     height: 163.8px;
     margin: 0 ;
     width: 325px;

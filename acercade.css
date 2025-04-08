@@ -24,7 +24,7 @@ body{
 
 
 
-
+/* Versión ESCRITORIO */
 
 @media  (min-width: 370px){
 
@@ -71,6 +71,7 @@ body{
     height: 5px;
     display: block;
 }
+
 
 
 .encabezado{ /*div del menú de navegación*/
@@ -418,6 +419,7 @@ font-size: 20px;
 .card-text{
     font-weight: bolder;
     color:#424242;
+  
 }
 
 
@@ -592,16 +594,20 @@ font-size: 20px;
     display: none;
 }
 
-
+.versionCelulares{
+    display: none;
+}
 
 }
 
-/* VERSIÓN MOVIL /////////////////////////////////////////////////////////////////////////////////////// */
+/* VERSIÓN MOBILE /////////////////////////////////////////////////////////////////////////////////////// */
 
 
 @media  (max-width: 767px){
 
-   
+    .versionCelulares{
+        display: block;
+    }
 
     .todo{display: none;
     }
