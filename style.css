@@ -13,6 +13,21 @@ body{
     color: black;
 }
 
+.lasmalvinas1{
+    color: #000000;
+}
+
+.enlaced8{
+    color: #000000;
+}
+
+.reunionenlace{
+    color: #000000;
+}
+
+.institu1{
+    color: #000000;
+}
 
 header{
     display: none;
@@ -88,6 +103,15 @@ footer{
         color: #000000;
     }
    
+    .enlacereunion31{
+        color: #000000;
+    }
+    
+
+    .enlaced8{
+        color: #000000;
+    }
+
     .versionCelulares {
         display: block; /* Mostrar solo en pantallas pequeñas */
     }
@@ -172,7 +196,9 @@ footer{
 
 
     .carruselMovil{
-        background-image: url(img/portadaMovil.png);
+        background-image: url(img/portadaMovil2.png);
+        background-size: cover;
+        background-position-x: right;
     }
 
     .titularCarruselMovil{
@@ -349,8 +375,9 @@ footer{
 .s1{
     width: 160px;
     height: 160px;
-   background-image: url(img/5.jpg);
-   background-size:190%;
+   background-image: url(img/inst3.png);
+   background-size:cover;
+   background-position-x: right;
     margin:  0 0 0 10px;
 }
 
@@ -380,9 +407,10 @@ footer{
 .s5{
     width: 160px;
     height: 160px;
-   background-image: url(img/ep2.png);
+   background-image: url(img/inst6.png);
     margin:  0 0 0 10px;
     background-size: cover;
+    background-position-x:75%;
 }
 
 
@@ -453,15 +481,15 @@ footer{
 }
 
 .card-img-top{
-    height: 250px;
-    object-fit: cover;
-    
+    height: 239px;
+    object-fit:contain;
 
 }
 
 
 .card-body{
     height:100px;
+    
     
 }
 
@@ -683,6 +711,9 @@ footer{
 
 .whatsapp-float img:hover {
     transform: scale(1.1);
+
+
+    
 }
 
 
@@ -829,7 +860,7 @@ will-change: width;
 /*CARRUSEL ENCABEZADO VERSIÓN ESCRITORIO*/
 
 .carruselEscritorio{
-    background-image: url(img/portada.png);
+    background-image: url(img/principal.png);
     height: 350px;
     width: 1350px;
     display: block;
@@ -902,10 +933,11 @@ will-change: width;
 .imagenGrande{
     height:525px ;
     width: 800px;
-
+   
     margin: 0 0 0 30px;
     
 }
+
 
 .imagenesP{
     height: 400px;
@@ -1106,8 +1138,9 @@ will-change: width;
 }
 
 .cardInst{
-    background-image: url(img/5.jpg);
+    background-image: url(img/inst3.png);
     background-size:cover;
+    background-position-x: right;
     height: 163.8px;
     margin:  0;
     width: 325px;
@@ -1140,9 +1173,11 @@ will-change: width;
 }
 
 .cardInst4{
-    background-image: url(img/ep2.png);
+    background-image: url(img/inst6.png);
     height: 163.8px;
     width: 325px;
+    background-size: cover;
+    background-position-x: right;
    
 }
 
