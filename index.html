@@ -6,7 +6,7 @@
     <title>Juventud Peronista Santiago del Estero</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Ventana-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,8 @@
 
 
         <a href="#contactoInicio"class="letranavegar">CONTACTO</a>
-        <a href="https://wa.me/+5493855806460" target="_blank"><button class="afiliatejp">AFILIATE</button></a> 
+         <!--<a href="https://wa.me/+5493855806460" target="_blank"><button class="afiliatejp">AFILIATE</button><!</a> -->
+         <button class="afiliatejp" id="botonAfiliate">AFILIATE</button>
 
     </div>
 
@@ -123,7 +124,8 @@
 <div class="banerEscritorio">
   <h2 class="afiliateEscritorio">AFILIATE AL PARTIDO JUSTICIALISTA</h2>
   <P class="textoAfiliate">¡Contáctate con nosotros y forma parte del movimiento popular más grande del país!</P>
-  <a href="https://wa.me/+5493855806460" target="_blank"><button class="botonAfiliate">SUMATE</button></a>
+  <!--<a href="https://wa.me/+5493855806460" target="_blank"><button class="botonAfiliate">SUMATE</button></a>-->
+  <button class="botonAfiliate" id="botonSumate">SUMATE</button>
 </div>
 
 <br><br><br id="institucionalInicio">
@@ -276,7 +278,10 @@
             </a>
 
             
-            <a href="https://wa.me/+5493855806460" class= "enlaceAfiliarse" target="_blank"><button class="afi">Afiliate</button></a>
+            <!-- <a href="https://wa.me/+5493855806460" class= "enlaceAfiliarse" target="_blank"><button class="afi">Afiliate</button></a>-->
+            <button class="afi" id="botonAfiliateMovil">Afiliate</button>
+
+            
 
 
             <!-- Menú offcanvas -->
@@ -301,7 +306,9 @@
                         
                     </ul>
                     
-                    <a href="https://wa.me/+5493855806460" class="TextoBotonHamburg"><button class="botondeHmaburguesAfi">AFILIATE</button>
+                     <!--<a href="https://wa.me/+5493855806460" class="TextoBotonHamburg"><button class="botondeHmaburguesAfi">AFILIATE</button>-->
+                      <button class="botondeHmaburguesAfi" id="botonAfiliateMenuMovil">AFILIATE</button>
+
 
                 </div>
             </div>
@@ -431,7 +438,8 @@
 <div class="sumate">
     <h1 class="text">AFILIATE AL PARTIDO JUSTICIALISTA</h1>
     <P class="text2">¡Contáctate con nosotros y forma parte <br> del movimiento popular más grande del país!</P>
-    <a href="https://wa.me/+5493855806460" class=enlaceBotonSumate target="_blank"><button class="llamado">SUMATE</button></a>
+    <!--<a href="https://wa.me/+5493855806460" class=enlaceBotonSumate target="_blank"><button class="llamado">SUMATE</button></a>-->
+    <button class="llamado" id="botonSumateMovil">SUMATE</button>
 </div>
 
 <br><br id="contactoCel">
@@ -553,6 +561,47 @@
 
 
 <script src="app.js"></script>
- 
+
+
+
+
+<script>
+  //VENTANAS EMERGENTES
+  function mostrarAlertaConRedireccion() {
+    Swal.fire({
+      title: '¡Afiliate al PJ!',
+      text: 'Para afiliarte al Partido Justicialista, escribinos por WhatsApp',
+      icon: 'success',
+      showCancelButton: true,
+      confirmButtonText: 'Continuar',
+      cancelButtonText: 'Cancelar',
+      confirmButtonColor: '#25d366',
+      cancelButtonColor: '#d33'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.open("https://wa.me/+5493855806460", "_blank");
+      }
+    });
+  }
+
+  // Lista de IDs de todos los botones
+  const botones = [
+    "botonAfiliate",
+    "botonSumate",
+    "botonAfiliateMovil",
+    "botonAfiliateMenuMovil",
+    "botonSumateMovil"
+  ];
+
+  // Asignar evento a cada botón si existe
+  botones.forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.addEventListener("click", mostrarAlertaConRedireccion);
+    }
+  });
+</script>
+
+
 </body>
 </html>
