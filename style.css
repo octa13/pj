@@ -482,7 +482,8 @@ footer{
 
 .card-img-top{
     height: 239px;
-    object-fit:contain;
+    width: 380px ;
+    object-fit:cover;
 
 }
 
@@ -1173,7 +1174,7 @@ will-change: width;
 }
 
 .cardInst4{
-    background-image: url(img/inst6.png);
+    background-image: url(img/escritoriogent.png);
     height: 163.8px;
     width: 325px;
     background-size: cover;
