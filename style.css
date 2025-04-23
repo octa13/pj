@@ -310,7 +310,7 @@ footer{
     
 /*Menú desplegable    /////////////////////////*/
 .offcanvas-custom {
-    background-color:#004e97; /* Cambia este color al que desees */
+    background-image: url(img/menudesplega.png); /* Cambia este color al que desees */
 }
 
 
