@@ -603,7 +603,9 @@ body{
 
 /*Menú desplegable    /////////////////////////*/
 .offcanvas-custom {
-    background-color:#004e97; /* Cambia este color al que desees */
+    background-image: url(../img/fondmenudespl.png); /* Cambia este color al que desees */
+    background-size: cover;
+    background-position-x: right;
 }
 
 
