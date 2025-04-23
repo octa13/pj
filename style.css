@@ -312,6 +312,7 @@ footer{
 .offcanvas-custom {
     background-image: url(img/menudesplega.png); /* Cambia este color al que desees */
     background-size: cover;
+    background-position-x: right;
 }
 
 
