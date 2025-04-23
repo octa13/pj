@@ -6,7 +6,7 @@
     <title>Acerca de - Juventud Peronista Santiago del Estero</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="acercade.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Ventana-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,8 @@
 
 
         <a href="#contactoInicio"class="letranavegar">CONTACTO</a>
-        <a href="https://wa.me/+5493855806460" target="_blank"><button class="afiliatejp">AFILIATE</button></a> 
+
+       <button class="afiliatejp" id="botonAfiliate">AFILIATE</button>
 
     </div>
 
@@ -82,15 +83,15 @@
         <div class="imagenInst"></div>
     </div>    
 
-    <div class="textoInstitucional1"><p class="descripcionInstitucional">• Quienes somos?
+    <div class="textoInstitucional1"><p class="descripcionInstitucional">• <b>Quienes somos?</b>
         Un grupo de jóvenes de la provincia de Santiago Del Estero, militantes activos del Movimiento Nacional Justicialista.
         Más conocidos como la Jotapé. ✌🏻💙 <br> <br>
         
-        • Ideales:
+        • <b>Ideales:</b>
         Los jóvenes seguimos los ideales y el legado de Perón y Evita.
         Militamos la Justicia Social porque creemos que la patria es el otro. <br> <br>
         
-        • Objetivos:
+        • <b>Objetivos:</b>
         Incluir a los jóvenes en la participación política y llevar a cabo sus ideas y propuestas.</p></div>
 
 
@@ -102,7 +103,7 @@
 <div class="banerEscritorio">
     <h2 class="afiliateEscritorio">AFILIATE AL PARTIDO JUSTICIALISTA</h2>
     <P class="textoAfiliate">¡Contáctate con nosotros y forma parte del movimiento popular más grande del país!</P>
-    <a href="https://wa.me/+5493855806460" target="_blank"><button class="botonAfiliate">SUMATE</button></a>
+    <button class="botonAfiliate" id="botonSumate">SUMATE</button>
 </div>
 
 
@@ -241,8 +242,7 @@
                 </a>
     
                 <!-- Botón afiliate -->            
-                <button class="afi"><a href="https://wa.me/+5493855806460" class= "enlaceAfiliarse" target="_blank">Afiliate</a></button>
-    
+                <button class="afi" id="botonAfiliateMovil">Afiliate</button>
     
                 <!-- Menú offcanvas -->
                 <div class="offcanvas offcanvas-start  offcanvas-custom" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -266,7 +266,7 @@
                             
                         </ul>
                         
-                  <button class="botondeHmaburguesAfi"><a href="https://wa.me/+5493855806460" class="TextoBotonHamburg" target="_blank">AFILIATE</a></button> 
+                        <button class="botondeHmaburguesAfi" id="botonAfiliateMenuMovil">AFILIATE</button>
     
                     </div>
                 </div>
@@ -311,7 +311,7 @@
         <h1 class="text">AFILIATE AL PARTIDO JUSTICIALISTA</h1>
         <P class="text2">Contáctate con nosotros y forma parte del <br> movimiento 
             popular más grande del país.</P>
-        <a href="https://wa.me/+5493855806460" class=enlaceBotonSumate target="_blank"><button class="llamado">SUMATE</button></a>
+            <button class="llamado" id="botonSumateMovil">SUMATE</button>
     </div>
 
     <br class="brN">
@@ -481,6 +481,46 @@
     
     
     <script src="app.js"></script>
+
+
+    <script>
+        //VENTANAS EMERGENTES
+        function mostrarAlertaConRedireccion() {
+          Swal.fire({
+            title: '¡Afiliate al PJ!',
+            text: 'Para afiliarte al Partido Justicialista, dale a "Continuar" y escribinos por WhatsApp',
+            icon: 'success',
+            background: ' #015eb4',
+            color:'  white',
+            showCancelButton: true,
+            confirmButtonText: 'Continuar',
+            cancelButtonText: 'Cancelar',
+            confirmButtonColor: 'rgb(22, 173, 22)',
+            cancelButtonColor: 'rgb(233, 56, 56)'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.open("https://wa.me/+5493855806460", "_blank");
+            }
+          });
+        }
+      
+        // Lista de IDs de todos los botones
+        const botones = [
+          "botonAfiliate",
+          "botonSumate",
+          "botonAfiliateMovil",
+          "botonAfiliateMenuMovil",
+          "botonSumateMovil"
+        ];
+      
+        // Asignar evento a cada botón si existe
+        botones.forEach(id => {
+          const btn = document.getElementById(id);
+          if (btn) {
+            btn.addEventListener("click", mostrarAlertaConRedireccion);
+          }
+        });
+      </script>
 </body>
 </div>
 </html>
