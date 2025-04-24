@@ -525,11 +525,26 @@ body{
        
     }
     
+    .formulario1{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgba(0 0 0 / 0.9),rgba(3, 75, 170, 0.9)),url(img/bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 600px;
+        
+
+    }
+
+
+
    .formulario{
         display:flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(rgba(0 0 0 / .8),rgba(3, 75, 170, 0.8)),url(img/bg.jpg);
+        background: linear-gradient(rgba(0 0 0 / 0.9),rgba(3, 75, 170, 0.9)),url(img/bg.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -909,9 +924,12 @@ text-decoration: none;
 /*Llamado a la acción  //////////////////////////*/
 .sumate{
     /*  background: linear-gradient(to right, #fce941, rgba(255, 148, 25, 0.8));*/
-    background-image: url(img/mh.png);
+    background-image: url(img/bannerform.png);
+    background-size: cover;
       padding: 25px 0;
       display: block;
+      height: 100px
+      ;
   }
   
   
