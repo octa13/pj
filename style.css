@@ -383,6 +383,15 @@ footer{
     margin:  0 0 0 10px;
 }
 
+.s10{
+    width: 160px;
+    height: 160px;
+   background-image: url(img/inst1.jpg);
+   background-size:cover;
+   background-position-x: right;
+    margin:  0 0 0 10px;
+}
+
 
 .s2{
     background-color: white;
@@ -1144,6 +1153,16 @@ will-change: width;
 
 .cardInst{
     background-image: url(img/inst3.png);
+    background-size:cover;
+    background-position-x: right;
+    height: 163.8px;
+    margin:  0;
+    width: 325px;
+
+}
+
+.cardInst1{
+    background-image: url(img/inst1.jpg);
     background-size:cover;
     background-position-x: right;
     height: 163.8px;
