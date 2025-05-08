@@ -377,7 +377,7 @@ footer{
 .s1{
     width: 160px;
     height: 160px;
-   background-image: url(img/inst3.png);
+   background-image: url(img/ofrenda.jpg);
    background-size:cover;
    background-position-x: right;
     margin:  0 0 0 10px;
@@ -1170,6 +1170,18 @@ will-change: width;
     width: 325px;
 
 }
+
+.cardInst5{
+    background-image: url(img/ofrenda.jpg);
+    background-size:cover;
+    background-position-x: right;
+    height: 163.8px;
+    margin:  0;
+    width: 325px;
+
+}
+
+
 
 .textInst{
     background-color: white;
