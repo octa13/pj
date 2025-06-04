@@ -21,7 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">  <!--EFECTOS DE MOV-->   
 
 <link rel="icon" href="img/prueba.png" type="image/x-icon">
 
@@ -107,21 +108,22 @@
 
           
             <div class="i1">
-                <a href="novedades/congresoNacional.html" class="reunionenlace"><div class="cards1" style="width: 37.5rem;">
-                    <img src="img/congresonacionalEsc.png" class="card-img-top" alt="..." >
+                <a href="novedades/socio.html" class="reunionenlace"><div class="cards1" style="width: 37.5rem;">
+                    <img src="img/socio.png" class="card-img-top" alt="..." >
                     <div class="card-body2">
-                      <p class="card-text2">Se realizó un nuevo Congreso Nacional del Partido Justicialista con la presencia de diferentes autoridades partidiarias</p>
+                      <p class="card-text2">La secretaria de la Juventud Peronista provincial, participó del conversatorio “Sociología, militancia y compromiso sociopolítico” </p>
                     </div>
                   </div></a>
             
             </div>
 
+            <br>
 
             <div class="i2">
-              <a href="novedades/anuncioAnual.html" class="reunionenlace"><div class="cards1" style="width: 37.5rem;">
-                <img src="img/anuncio2.png" class="card-img-top" alt="...">
+              <a href="novedades/congresoNacional.html" class="reunionenlace"><div class="cards1" style="width: 37.5rem;">
+                <img src="img/congresonacionalEsc.png" class="card-img-top" alt="...">
                 <div class="card-body2">
-                  <p class="card-text2">El gobernador Gerardo Zamora brindó su discurso anual en el marco de los 205 años de la Autonomía Provincial</p>
+                  <p class="card-text2">Se realizó un nuevo Congreso Nacional del Partido Justicialista con la presencia de diferentes autoridades partidiarias</p>
                 </div>
               </div></a>
             </div>
@@ -141,7 +143,8 @@
 
 
 
-<div class="banerEscritorio">
+<div class="banerEscritorio"  data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+
   <h2 class="afiliateEscritorio">AFILIATE AL PARTIDO JUSTICIALISTA</h2>
   <P class="textoAfiliate">¡Contáctate con nosotros y forma parte del movimiento popular más grande del país!</P>
   <!--<a href="https://wa.me/+5493855806460" target="_blank"><button class="botonAfiliate">SUMATE</button></a>-->
@@ -202,7 +205,7 @@
 
 <br><br>
 
-<img src="img/Banpj.png" alt="" class="banerdelPjNuevo">
+<img src="img/Banpj.png" alt="" class="banerdelPjNuevo" data-aos="fade-right" data-aos-duration="1000">
 
 <br><br id="contactoInicio">
 
@@ -376,9 +379,9 @@
 
 
 <div class="card" >
-  <img src="img/congresoNacional.jpg" class="card-img-top" alt="...">
-  <a href="novedades/congresoNacional.html" class="enlaceincioTallercel"><div class="card-body">
-    <h5 class="card-title">Se realizó un nuevo Congreso Nacional del Partido Justicialista con la presencia de diferentes autoridades partidiarias </h5>
+  <img src="img/socio.png" class="card-img-top" alt="...">
+  <a href="novedades/socio.html" class="enlaceincioTallercel"><div class="card-body">
+    <h5 class="card-title">La secretaria de la Juventud Peronista provincial, participó del conversatorio “Sociología, militancia y compromiso sociopolítico”</h5>
     
    
   </div></a>
@@ -387,9 +390,9 @@
 <br>
 
  <div class="card" >
-  <img src="img/anuncio2.png" class="card-img-top" alt="...">
-  <a href="novedades/anuncioAnual.html" class="enlacereunion31"><div class="card-body">
-    <h5 class="card-title">El gobernador Gerardo Zamora brindó su discurso anual en el marco de los 205 años de la Autonomía Provincial</h5>
+  <img src="img/congresoNacional.jpg" class="card-img-top" alt="...">
+  <a href="novedades/congresoNacional.html" class="enlacereunion31"><div class="card-body">
+    <h5 class="card-title">Se realizó un nuevo Congreso Nacional del Partido Justicialista con la presencia de diferentes autoridades partidiarias</h5>
     
    
   </div></a>
@@ -402,7 +405,7 @@
 
 <br> <br>
 
-<div class="hero">
+<div class="hero" data-aos="fade-right" data-aos-duration="1000">
     <img src="" alt="" class="h">
 </div>
 
@@ -464,7 +467,7 @@
 
 <br><br>
 
-<div class="sumate">
+<div class="sumate" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
     <h1 class="text">AFILIATE AL PARTIDO JUSTICIALISTA</h1>
     <P class="text2">¡Contáctate con nosotros y forma parte <br> del movimiento popular más grande del país!</P>
     <!--<a href="https://wa.me/+5493855806460" class=enlaceBotonSumate target="_blank"><button class="llamado">SUMATE</button></a>-->
@@ -633,6 +636,10 @@
   });
 </script>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
