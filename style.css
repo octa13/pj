@@ -196,7 +196,7 @@ footer{
 
 
     .carruselMovil{
-        background-image: url(img/bannercfkcel.png);
+        background-image: url(img/rjuventudcel.png);
         background-size: cover;
         background-position-x: right;
     }
@@ -875,7 +875,7 @@ will-change: width;
 /*CARRUSEL ENCABEZADO VERSIÓN ESCRITORIO*/
 
 .carruselEscritorio{
-    background-image: url(img/bannercfk.png);
+    background-image: url(img/rjuventud.png);
     height: 350px;
     width: 1350px;
     display: block;
