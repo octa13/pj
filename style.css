@@ -196,7 +196,7 @@ footer{
 
 
     .carruselMovil{
-        background-image: url(img/rjuventudcel.png);
+        background-image: url(img/encuentazcel.png);
         background-size: cover;
         background-position-x: right;
     }
@@ -875,11 +875,11 @@ will-change: width;
 /*CARRUSEL ENCABEZADO VERSIÓN ESCRITORIO*/
 
 .carruselEscritorio{
-    background-image: url(img/rjuventud.png);
+    background-image: url(img/encuentroescaz.png);
     height: 350px;
     width: 1350px;
     display: block;
-}
+ }
 
 
 .contenidoCarrusel{

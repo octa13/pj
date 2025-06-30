@@ -322,7 +322,7 @@ body{
         width: 94%;
         background-size:cover;
         height: 300px;
-       background-image: url(../img/rjuventudp.png);
+       background-image: url(../img/Encuentroesc.png);
        background-position-x: right;
         margin: 0 30px;
 
@@ -677,7 +677,7 @@ text-decoration: none;
 }
 
 .imagendeNovedad{
-    background-image: url(../img/rjuventudpcel.png);
+    background-image: url(../img/Encuentroesc.png);
     background-position-x:right;
     background-size: cover;
     height: 180px;
