@@ -196,9 +196,9 @@ footer{
 
 
     .carruselMovil{
-        background-image: url(img/encuentazcel.png);
+        background-image: url(img/portadaAnv.png);
         background-size: cover;
-        background-position-x: right;
+        background-position-x:left;
     }
 
     .titularCarruselMovil{
@@ -875,7 +875,7 @@ will-change: width;
 /*CARRUSEL ENCABEZADO VERSIÓN ESCRITORIO*/
 
 .carruselEscritorio{
-    background-image: url(img/encuentroescaz.png);
+    background-image: url(img/portadaAnv.png);
     height: 350px;
     width: 1350px;
     display: block;
