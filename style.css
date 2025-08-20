@@ -196,9 +196,9 @@ footer{
 
 
     .carruselMovil{
-        background-image: url(img/portadaAnv.png);
+        background-image: url(img/candidatPicel.png);
         background-size: cover;
-        background-position-x:left;
+        background-position-x:right;
     }
 
     .titularCarruselMovil{
@@ -800,7 +800,7 @@ width: 170px;
 
 .navegar {
     background-color:white;
-    width: 55%;
+    width: 52%;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -849,7 +849,7 @@ will-change: width;
      padding: 7px;
      border: none;
      background-color: #004e97;
-     width: 90px;
+     width: 180px;
 
 
      transition: transform 0.1s ease-in-out; 
@@ -875,7 +875,7 @@ will-change: width;
 /*CARRUSEL ENCABEZADO VERSIÓN ESCRITORIO*/
 
 .carruselEscritorio{
-    background-image: url(img/portadaAnv.png);
+    background-image: url(img/candidatPi.png);
     height: 350px;
     width: 1350px;
     display: block;
