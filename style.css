@@ -738,6 +738,74 @@ footer{
 
 
 
+/* Fondo oscuro */
+.popup {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 9999; /* Encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* Fondo semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja del pop-up */
+.popup-content {
+  position: relative;
+  background: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 500px;   /* ancho máximo */
+  width: 90%;
+  max-height: 90vh;   /* no más alto que el 90% de la pantalla */
+  overflow-y: auto;   /* si se pasa, aparece scroll */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Imagen del banner */
+.popup-banner {
+  max-width: 100%;
+  max-height: 85vh;   /* evita que tape la “X” */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Botón de cerrar */
+.close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  z-index: 10000; /* siempre arriba */
+}
+
+
+.close:hover {
+  color: rgb(0, 89, 255);
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+
+
+
 /* version escritorio////////////////////////////////////////////////////////////////////////////*/
 
 
@@ -745,6 +813,16 @@ footer{
 @media  (min-width: 370px){
 
    
+
+
+
+
+
+
+
+
+
+
 
 /*ENCABEZADO DE LA VERSIÓN ESCRITORIO*/
 

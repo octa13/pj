@@ -30,6 +30,29 @@
 </head>
 
 
+<!-- Pop-up -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close">&times;</span>
+    <a href="https://tu-enlace-publicitario.com" target="_blank">
+      <img src="img/JOSEEMILIONEDER.png" alt="Publicidad" class="popup-banner">
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -641,6 +664,36 @@
 <script>
   AOS.init();
 </script>
+
+
+<script>
+window.addEventListener("load", function() {
+  const popup = document.getElementById("popup");
+  const closeBtn = document.getElementById("closePopup");
+
+  // Mostrar pop-up al cargar la página
+  popup.style.display = "flex";
+
+  // Cerrar al hacer clic en la X
+  closeBtn.addEventListener("click", function() {
+    popup.style.display = "none";
+  });
+
+  // Cerrar si hace clic fuera del contenido
+  window.addEventListener("click", function(e) {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
+
+
+</script>
+
+
+
+
+
 
 </body>
 </html>
