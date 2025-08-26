@@ -34,7 +34,7 @@
 <div id="popup" class="popup">
   <div class="popup-content">
     <span id="closePopup" class="close">&times;</span>
-    <a href="https://tu-enlace-publicitario.com" target="_blank">
+    
       <img src="img/JOSEEMILIONEDER.png" alt="Publicidad" class="popup-banner">
     </a>
   </div>
@@ -170,10 +170,15 @@
 
 <div class="banerEscritorio">
 
-  <h2 class="afiliateEscritorio">AFILIATE AL PARTIDO JUSTICIALISTA</h2>
+  <!--<h2 class="afiliateEscritorio">AFILIATE AL PARTIDO JUSTICIALISTA</h2>
   <P class="textoAfiliate">¡Contactate con nosotros y forma parte del movimiento popular más grande del país!</P>
-  <!--<a href="https://wa.me/+5493855806460" target="_blank"><button class="botonAfiliate">SUMATE</button></a>-->
-  <button class="botonAfiliate" id="botonSumate">SUMATE</button>
+  <a href="https://wa.me/+5493855806460" target="_blank"><button class="botonAfiliate">SUMATE</button></a>
+  <button class="botonAfiliate" id="botonSumate">SUMATE</button>-->
+
+
+
+
+  
 </div>
 
 <br><br><br id="institucionalInicio">
@@ -430,8 +435,8 @@
 
 <br> <br>
 
-<div class="hero" data-aos="fade-right" data-aos-duration="1000">
-    <img src="" alt="" class="h">
+<div class="hero">
+    
 </div>
 
 <br><br id="institucionalCel">
@@ -491,12 +496,14 @@
 
 <br><br>
 
-<div class="sumate" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-    <h1 class="text">AFILIATE AL PARTIDO JUSTICIALISTA</h1>
+    <!--<h1 class="text">AFILIATE AL PARTIDO JUSTICIALISTA</h1>
     <P class="text2">¡Contáctate con nosotros y forma parte <br> del movimiento popular más grande del país!</P>
-    <!--<a href="https://wa.me/+5493855806460" class=enlaceBotonSumate target="_blank"><button class="llamado">SUMATE</button></a>-->
-    <button class="llamado" id="botonSumateMovil">SUMATE</button>
+    <a href="https://wa.me/+5493855806460" class=enlaceBotonSumate target="_blank"><button class="llamado">SUMATE</button></a>
+    <button class="llamado" id="botonSumateMovil">SUMATE</button>-->
+    <div class="heros" data-aos="fade-right" data-aos-duration="1000">
+    <img src="" alt="" class="h">
 </div>
+
 
 <br><br id="contactoCel">
 
@@ -690,6 +697,52 @@ window.addEventListener("load", function() {
 
 </script>
 
+
+<script>
+    const banner = document.querySelector('.banerEscritorio');
+    const imagenes = [
+        'img/banerpichon.png',
+        'img/banerpichon2.png'
+    ];
+
+    let indice = 0;
+
+    function cambiarImagen() {
+        banner.style.backgroundImage = `url(${imagenes[indice]})`;
+        indice = (indice + 1) % imagenes.length; // reinicia cuando llega al final
+    }
+
+    // Cambia la imagen cada 3 segundos
+    setInterval(cambiarImagen, 3000);
+
+    // Inicializa con la primera imagen
+    cambiarImagen();
+</script>
+
+
+
+
+<script>
+    const hero = document.querySelector('.hero');
+    const imagen = [
+        'img/banerpichoncel.png',
+        'img/banerpichoncel2.png'
+        
+    ];
+
+    let indise = 0;
+
+    function cambiarImagen() {
+        hero.style.backgroundImage = `url(${imagen[indise]})`;
+        indise = (indise + 1) % imagen.length; // reinicia cuando llega al final
+    }
+
+    // Cambia la imagen cada 3 segundos
+    setInterval(cambiarImagen, 3000);
+
+    // Inicializa con la primera imagen
+    cambiarImagen();
+</script>
 
 
 

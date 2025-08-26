@@ -536,12 +536,19 @@ footer{
 }
 
 .hero{
-    height: 200px;
-    background-image: url(img/MEJOR\ QUE\ DECIR\ ES\ HACER.png);
+    height: 250px;
     display: block;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0,5s ease-in-out;
 }
 
-
+.heros{
+    height: 200px;
+    display: block;
+    background-image: url(img/MEJOR\ QUE\ DECIR\ ES\ HACER.png);
+  
+}
 
 
 
@@ -1128,10 +1135,12 @@ will-change: width;
 
 
 .banerEscritorio{
-    background-image: url(img/bhEscritorio.png);
-    height: 300px;
+   
+    height: 350px;
     width: 100%;
-    
+     background-size: cover;
+    background-position: center;
+    transition: background-image 0,5s ease-in-out;
 }
 
 .afiliateEscritorio{
