@@ -487,7 +487,7 @@ footer{
     4px 0px 10px rgba(0, 0, 0, 0.05), /* Sombra derecha */
     -4px 0px 10px rgba(0, 0, 0, 0.05); /* Sombra izquierda */
    display: block;
-   height: 320px;
+   height: 260px;
    border: none;
 }
 
@@ -814,6 +814,11 @@ footer{
 
 
 /* version escritorio////////////////////////////////////////////////////////////////////////////*/
+/* version escritorio////////////////////////////////////////////////////////////////////////////*/
+/* version escritorio////////////////////////////////////////////////////////////////////////////*/
+/* version escritorio////////////////////////////////////////////////////////////////////////////*/
+/* version escritorio////////////////////////////////////////////////////////////////////////////*/
+
 
 
 
@@ -1040,24 +1045,25 @@ will-change: width;
 
 
 .imagenesP{
-    height: 400px;
+    height: 526px;
     width: 600px;
-  
+    
     margin: 0 30px 0 10px;
 }
 
 .i1{
-    height: 190px;
+    height: 250px;
     width: 600px;
+  
    
 }
 
 
 .i2{
-    height: 190px;
+    height: 250px;
     width: 600px;
-    
-    margin: 80px 0 0 0 ;
+   
+    margin: 26px 0 0 0 ;
 }
 
 .cards{
@@ -1075,7 +1081,10 @@ will-change: width;
     transform: scale(1.02); /* Aumenta el tamaño al 110% */
 }
 
-
+.card-img-top{
+    height: 185px;
+    object-fit: cover;
+}
 
 
 
