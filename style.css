@@ -196,7 +196,7 @@ footer{
 
 
     .carruselMovil{
-        background-image: url(img/candidatPicel.png);
+        background-image: url(img/padronPortcel.png);
         background-size: cover;
         background-position-x:right;
     }
@@ -965,7 +965,7 @@ will-change: width;
 /*CARRUSEL ENCABEZADO VERSIÓN ESCRITORIO*/
 
 .carruselEscritorio{
-    background-image: url(img/candidatPi.png);
+    background-image: url(img/padronPort.png);
     height: 350px;
     width: 1350px;
     display: block;
