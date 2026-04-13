@@ -672,29 +672,6 @@
 </script>
 
 
-<script>
-window.addEventListener("load", function() {
-  const popup = document.getElementById("popup");
-  const closeBtn = document.getElementById("closePopup");
-
-  // Mostrar pop-up al cargar la página
-  popup.style.display = "flex";
-
-  // Cerrar al hacer clic en la X
-  closeBtn.addEventListener("click", function() {
-    popup.style.display = "none";
-  });
-
-  // Cerrar si hace clic fuera del contenido
-  window.addEventListener("click", function(e) {
-    if (e.target === popup) {
-      popup.style.display = "none";
-    }
-  });
-});
-
-
-</script>
 
 
 <script>
